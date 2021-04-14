@@ -1,0 +1,130 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+        .img {
+            height: 63.547px;
+        }
+        
+        .notification {
+            position: fixed;
+            height: 8%;
+            width: 20%;
+            background-color: #C1F7EE;
+            margin-top: 47%;
+            margin-left: 79%;
+            transform-origin: right;
+            -webkit-animation: notify 3s ease-in-out;
+            animation: notify 3s ease-in-out;
+        }
+        
+        @-webkit-keyframes notify {
+            0% {
+                transform: scaleX(0);
+            }
+            10% {
+                transform: scaleX(1);
+            }
+            13% {
+                transform: scale(1.1);
+            }
+            16% {
+                transform: scale(1);
+            }
+            55% {
+                transform: scaleX(1);
+                border-radius: 0%;
+            }
+        }
+        
+        @keyframes notify {
+            0% {
+                transform: scaleX(0);
+            }
+            10% {
+                transform: scaleX(1);
+            }
+            13% {
+                transform: scale(1.1);
+            }
+            16% {
+                transform: scale(1);
+            }
+            55% {
+                transform: scaleX(1);
+                border-radius: 0%;
+            }
+        }
+        
+        .identifier {
+            position: absolute;
+            height: 80%;
+            margin-top: 7px;
+            margin-left: 7px;
+        }
+        
+        .text {
+            font-family: 'Roboto', sans-serif;
+            position: absolute;
+            height: 6px;
+            width: 270px;
+            margin-top: 20px;
+            margin-left: 100px;
+        }
+        
+        @-webkit-keyframes enter {
+            0% {
+                opacity: 0;
+            }
+            55% {
+                opacity: 0;
+            }
+            65% {
+                opacity: 1;
+                transform: scaleX(1);
+            }
+            95% {
+                opacity: 1;
+                transform: scaleX(1);
+            }
+            100% {
+                opacity: 0;
+                transform: scaleX(1);
+            }
+        }
+        
+        @keyframes enter {
+            0% {
+                opacity: 0;
+            }
+            55% {
+                opacity: 0;
+            }
+            65% {
+                opacity: 1;
+                transform: scaleX(1);
+            }
+            95% {
+                opacity: 1;
+                transform: scaleX(1);
+            }
+            100% {
+                opacity: 0;
+                transform: scaleX(1);
+            }
+        }
+    </style>
+</head>
+<div class="notification">
+    <div class="content">
+        <div class="identifier">
+            <img class="img" src="nina.png">
+        </div>
+        <div class="text">Como podemos te ajudar?<br>Clique aqui para falar conosco!</div>
+    </div>
+</div>
+
+</html>
